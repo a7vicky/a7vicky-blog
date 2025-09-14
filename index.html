@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@a7vicky blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="blog-title">a7vicky blog</h1>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+            <nav class="nav">
+                <button class="nav-btn active" data-topic="all">All Posts</button>
+                <button class="nav-btn" data-topic="tech">Tech</button>
+                <button class="nav-btn" data-topic="personal">Personal</button>
+                <button class="nav-btn" data-topic="tutorials">Tutorials</button>
+                <button class="nav-btn" data-topic="about">About</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Home Page -->
+        <div id="homePage" class="page">
+            <div class="container">
+                <!-- Author Section -->
+                <section class="author-section" id="authorSection">
+                    <div class="author-card">
+                        <div class="author-avatar">
+                            <div class="avatar-placeholder">AV</div>
+                        </div>
+                        <div class="author-info">
+                            <h2 class="author-name">A7Vicky</h2>
+                            <p class="author-bio">Senior Site Reliability Engineer</p>
+                            <p class="author-description">
+                                Passionate about creating clean, efficient code and sharing knowledge with the developer community.
+                                I write about technology, programming, and my journey in software engineering.
+                                
+                                Technical Associate with a solid foundation in the software industry and 
+                                hands-on expertise in building and operating highly available, scalable cloud-native infrastructure. 
+                                Experienced in cloud platforms (AWS/GCP/Azure), containerization (Docker, Kubernetes), and CI/CD pipelines 
+                                (Jenkins, GitOps). Skilled in implementing robust observability stacks (logging, metrics, tracing) and 
+                                developing automation using Python, Golang, and Bash. Passionate about driving operational excellence, 
+                                reducing toil, and improving system reliability through proactive monitoring and incident response. 
+                                Holds a B.Tech in Electronics and Communications Engineering from DIT University. 
+                            </p>
+                            <div class="social-links">
+                                <a href="https://github.com/a7vicky" class="social-link" target="_blank" rel="noopener">
+                                    <span class="social-icon">📱</span>
+                                    GitHub
+                                </a>
+                                <a href="https://twitter.com/vicky18dec" class="social-link" target="_blank" rel="noopener">
+                                    <span class="social-icon">🐦</span>
+                                    Twitter
+                                </a>
+                                <a href="https://linkedin.com/in/a7vicky" class="social-link" target="_blank" rel="noopener">
+                                    <span class="social-icon">💼</span>
+                                    LinkedIn
+                                </a>
+                                <a href="mailto:a7vicky1812@gmail.com" class="social-link">
+                                    <span class="social-icon">📧</span>
+                                    Email
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Posts Section -->
+                <section class="posts-section" id="postsSection">
+                    <div class="posts-header">
+                        <h2>Latest Posts</h2>
+                        <div class="posts-count" id="postsCount">Loading posts...</div>
+                    </div>
+                    <div class="posts-grid" id="postsGrid">
+                        <!-- Posts will be loaded dynamically -->
+                    </div>
+                </section>
+
+                <!-- Loading State -->
+                <div class="loading" id="loading">
+                    <div class="loading-spinner"></div>
+                    <p>Loading posts...</p>
+                </div>
+
+                <!-- Empty State -->
+                <div class="empty-state" id="emptyState" style="display: none;">
+                    <div class="empty-icon">📝</div>
+                    <h3>No posts found</h3>
+                    <p>Check back later for new content!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Post Page -->
+        <div id="postPage" class="page post-page" style="display: none;">
+            <div class="container">
+                <!-- Post content will be rendered here -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 a7Vicky Blog. Made with ❤️ and code.</p>
+        </div>
+    </footer>
+
+    <script src="blog-app.js"></script>
+</body>
+</html> 
