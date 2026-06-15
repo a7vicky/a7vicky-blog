@@ -270,6 +270,33 @@ body {
 .posts-count {
   font-size: var(--font-size-sm);
   color: var(--text-muted);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Topic Filter Buttons */
+.topic-filters {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  font-family: inherit;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--accent-color);
+  color: var(--bg-primary);
+  border-color: var(--accent-color);
 }
 
 .posts-grid {

@@ -2,7 +2,6 @@ import { JetBrains_Mono } from 'next/font/google';
 import ThemeProvider from '../components/ThemeProvider';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Suspense } from 'react';
 import './globals.css';
 
 const jetbrainsMono = JetBrains_Mono({
@@ -32,9 +31,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={jetbrainsMono.className}>
         <ThemeProvider>
-          <Suspense>
-            <Header />
-          </Suspense>
+          <Header />
           <main className="main">{children}</main>
           <Footer />
         </ThemeProvider>

@@ -1,12 +1,12 @@
-import { Suspense } from 'react';
 import { getAllPosts } from '../lib/posts';
-import HomeContent from '../components/HomeContent';
+import PostGrid from '../components/PostGrid';
 
 export default function HomePage() {
   const posts = getAllPosts();
+
   return (
-    <Suspense>
-      <HomeContent posts={posts} />
-    </Suspense>
+    <div className="container">
+      <PostGrid posts={posts} />
+    </div>
   );
 }
