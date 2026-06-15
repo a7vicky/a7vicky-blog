@@ -1,10 +1,9 @@
-# My Journey from Electronics Engineering to Site Reliability Engineering
-
-**Topic:** personal  
-**Date:** 2025-09-13  
-**Read Time:** 8 min read  
-**Excerpt:** From B.Tech in Electronics to Senior SRE - my transformation journey through cloud-native infrastructure, automation, and operational excellence.
-
+---
+title: "My Journey from Electronics Engineering to Site Reliability Engineering"
+topic: personal
+date: "2025-09-13"
+readTime: "8 min read"
+excerpt: "From B.Tech in Electronics to Senior SRE - my transformation journey through cloud-native infrastructure, automation, and operational excellence."
 ---
 
 Looking back at my career journey, I never imagined that my path would lead me from Electronics and Communications Engineering to becoming a Senior Site Reliability Engineer. Today, I want to share this transformation story - the challenges, learnings, and pivotal moments that shaped my career in the ever-evolving world of cloud infrastructure and DevOps.
@@ -185,4 +184,4 @@ The journey continues, and I'm excited about what lies ahead in the ever-evolvin
 
 ---
 
-*What's your SRE journey been like? I'd love to hear about your experiences and challenges in the comments or through direct messages. Let's learn from each other and build better systems together.* 
+*What's your SRE journey been like? I'd love to hear about your experiences and challenges in the comments or through direct messages. Let's learn from each other and build better systems together.*
